@@ -1,12 +1,14 @@
 pipeline{
   agent any
-     stages{
-       stage("testing"){
+      stages{
+        stage("working with variables"){
           steps{
             script{
-               println("hi team")
+                a = 10
+                println("${a}")
             }
-       }
-  }
-}
+          }
+        }
+      
+      }
 }
